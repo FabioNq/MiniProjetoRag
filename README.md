@@ -488,6 +488,12 @@ Os principais conceitos estudados foram:
 ---
 
 
+## Conclusão 
+
+Apesar de toda criação ter sido ótima para o aprendizado ainda existem lacunas para serem preenchidas, 
+por exemplo em alguns momentos a API não responde quando é questionada sobre "o que é machie learning?" ou as vezes
+ela responde quando é colocada uma letra maiuscula ou com a uma letra maiúscula, são esses pontos que podem ser estudados e melhorados.
+
 
 ---
 
