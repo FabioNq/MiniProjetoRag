@@ -4,8 +4,12 @@
 import requests
 import streamlit as st
 import time
+import os
+import dotenv
+dotenv.load_dotenv()
 
 
+URI_API = os.getenv("URI_API")
 
 st.title("chat sobre conceitos de Machine Learning")
 
@@ -25,7 +29,7 @@ if st.button("Processar Texto"):
   if query.strip() == "":
     st.warning("Por favor, digite algum texto antes de enviar.")
   else:
-    url = "http://127.0.0.1:5003/predict"  # Substitua pela sua URL
+    url = URI_API  # Substitua pela sua URL
 
     # Define que estamos enviando e aceitando texto puro
     headers = {"Content-Type": "text/plain", "Accept": "text/plain"}
