@@ -10,6 +10,8 @@ aiosignal==1.4.0
     # via aiohttp
 alembic==1.19.1
     # via mlflow
+altair==6.2.2
+    # via streamlit
 annotated-doc==0.0.5
     # via
     #   fastapi
@@ -25,6 +27,7 @@ anyio==4.14.2
     #   jupyter-server
     #   openai
     #   starlette
+    #   streamlit
 argon2-cffi==25.1.0
     # via jupyter-server
 argon2-cffi-bindings==26.1.0
@@ -72,6 +75,7 @@ click==8.5.0
     #   huggingface-hub
     #   mlflow-skinny
     #   python-oxmsg
+    #   streamlit
     #   uvicorn
 cloudpickle==3.1.2
     # via
@@ -198,6 +202,8 @@ httpcore==1.0.9
     # via httpx
 httpcore2==2.12.0
     # via httpx2
+httptools==0.8.0
+    # via streamlit
 httpx==0.28.1
     # via
     #   docling-slim
@@ -246,16 +252,20 @@ ipywidgets==8.1.9
 isoduration==20.11.0
     # via jsonschema
 itsdangerous==2.2.0
-    # via flask
+    # via
+    #   flask
+    #   streamlit
 jedi==0.20.0
     # via ipython
 jinja2==3.1.6
     # via
+    #   altair
     #   flask
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
+    #   pydeck
     #   torch
 jiter==0.16.0
     # via openai
@@ -269,6 +279,7 @@ jsonref==1.1.0
     # via docling-core
 jsonschema==4.26.0
     # via
+    #   altair
     #   docling-core
     #   jupyter-events
     #   jupyterlab-server
@@ -382,7 +393,9 @@ multidict==6.7.1
 multiprocess==0.70.19
     # via mpire
 narwhals==2.25.0
-    # via scikit-learn
+    # via
+    #   altair
+    #   scikit-learn
 nbclient==0.11.0
     # via nbconvert
 nbconvert==7.17.1
@@ -416,6 +429,7 @@ numpy==2.5.2
     #   onnxruntime
     #   opencv-python
     #   pandas
+    #   pydeck
     #   qdrant-client
     #   rapidocr
     #   safetensors
@@ -423,6 +437,7 @@ numpy==2.5.2
     #   scipy
     #   shapely
     #   skops
+    #   streamlit
     #   torchvision
     #   transformers
 olefile==0.47
@@ -456,6 +471,7 @@ opentelemetry-semantic-conventions==0.65b0
 packaging==26.3
     # via
     #   accelerate
+    #   altair
     #   huggingface-hub
     #   ipykernel
     #   jupyter-events
@@ -468,12 +484,14 @@ packaging==26.3
     #   nbconvert
     #   onnxruntime
     #   skops
+    #   streamlit
     #   transformers
 pandas==2.3.3
     # via
     #   rag (pyproject.toml)
     #   docling-core
     #   mlflow
+    #   streamlit
 pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.7
@@ -488,6 +506,7 @@ pillow==12.3.0
     #   matplotlib
     #   python-pptx
     #   rapidocr
+    #   streamlit
     #   torchvision
 platformdirs==4.11.7
     # via jupyter-core
@@ -517,6 +536,7 @@ protobuf==6.33.6
     #   onnxruntime
     #   opentelemetry-proto
     #   qdrant-client
+    #   streamlit
 psutil==7.2.2
     # via
     #   accelerate
@@ -527,7 +547,9 @@ pure-eval==0.2.3
 py-rust-stemmers==0.1.8
     # via fastembed
 pyarrow==25.0.1
-    # via mlflow
+    # via
+    #   mlflow
+    #   streamlit
 pyasn1==0.6.4
     # via pyasn1-modules
 pyasn1-modules==0.4.2
@@ -553,6 +575,8 @@ pydantic-settings==2.15.0
     # via
     #   docling-core
     #   docling-slim
+pydeck==0.9.3
+    # via streamlit
 pygments==2.21.0
     # via
     #   ipython
@@ -584,6 +608,8 @@ python-dotenv==1.2.3
     #   pydantic-settings
 python-json-logger==4.2.0
     # via jupyter-events
+python-multipart==0.0.32
+    # via streamlit
 python-oxmsg==0.0.2
     # via docling-slim
 python-pptx==1.0.2
@@ -637,6 +663,7 @@ requests==2.34.2
     #   jupyterlab-server
     #   mlflow-skinny
     #   rapidocr
+    #   streamlit
 rfc3339-validator==0.1.4
     # via
     #   jsonschema
@@ -708,6 +735,9 @@ starlette==1.6.0
     # via
     #   fastapi
     #   mlflow-skinny
+    #   streamlit
+streamlit==1.63.0
+    # via rag (pyproject.toml)
 sympy==1.14.0
     # via torch
 tabulate==0.10.0
@@ -724,6 +754,8 @@ tokenizers==0.22.2
     # via
     #   fastembed
     #   transformers
+toml==0.10.2
+    # via streamlit
 torch==2.13.0
     # via
     #   rag (pyproject.toml)
@@ -798,6 +830,7 @@ typer==0.26.8
 typing-extensions==4.16.0
     # via
     #   alembic
+    #   altair
     #   beautifulsoup4
     #   docling-core
     #   fastapi
@@ -817,6 +850,7 @@ typing-extensions==4.16.0
     #   python-oxmsg
     #   python-pptx
     #   sqlalchemy
+    #   streamlit
     #   torch
     #   typing-inspection
 typing-inspection==0.4.4
@@ -840,9 +874,13 @@ urllib3==2.7.0
 uuid==1.30
     # via rag (pyproject.toml)
 uvicorn==0.52.4
-    # via mlflow-skinny
+    # via
+    #   mlflow-skinny
+    #   streamlit
 waitress==3.0.2
     # via mlflow
+watchdog==6.0.0
+    # via streamlit
 wcwidth==0.8.3
     # via
     #   prettytable
@@ -856,7 +894,9 @@ webencodings==0.6.1
 websocket-client==1.9.2
     # via jupyter-server
 websockets==16.1.1
-    # via docling-slim
+    # via
+    #   docling-slim
+    #   streamlit
 werkzeug==3.1.8
     # via
     #   flask
