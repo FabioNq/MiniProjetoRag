@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido de forma simples e didática com o objetivo de entender, na prática, como funciona a construção de um sistema de **RAG (Retrieval-Augmented Generation)**, também conhecido como **Geração Aumentada via Recuperação** todo ensinamento aprendido neste curso foi realizado no Canal [TeoMeWhy](https://www.youtube.com/watch?v=HGi3V2S2Y7s&list=PLvlkVRRKOYFTijx_2mJBv7u2F21VD-Zgb&index=1)
+Este projeto foi desenvolvido de forma simples e didática com o objetivo de entender, na prática, como funciona a construção de um sistema de **RAG (Retrieval-Augmented Generation)**, também conhecido como **Geração Aumentada via Recuperação** todo ensinamento aprendido neste curso foi realizado no Canal [TeoMeWhy](https://www.youtube.com/watch?v=HGi3V2S2Y7s&list=PLvlkVRRKOYFTijx_2mJBv7u2F21VD-Zgb&index=1), minha base de dados foram arquivos que explicam de forma teórica sobre Aprendizado de maquina como por exemplo : "o que é overfitting?, data lekeage, Entropia" e etc..
 
 A ideia principal não foi construir uma solução complexa ou pronta para produção, mas sim explorar os principais conceitos e etapas necessários para criar um sistema capaz de:
 
@@ -487,6 +487,12 @@ Os principais conceitos estudados foram:
 
 ---
 
+
+## Conclusão 
+
+Apesar de toda criação ter sido ótima para o aprendizado ainda existem lacunas para serem preenchidas, 
+por exemplo em alguns momentos a API não responde quando é questionada sobre "o que é machie learning?" ou as vezes
+ela responde quando é colocada uma letra maiuscula ou com a uma letra maiúscula, são esses pontos que podem ser estudados e melhorados.
 
 
 ---
