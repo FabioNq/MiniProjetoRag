@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido de forma simples e didática com o objetivo de entender, na prática, como funciona a construção de um sistema de **RAG (Retrieval-Augmented Generation)**, também conhecido como **Geração Aumentada via Recuperação** todo ensinamento aprendido neste curso foi realizado no Canal [TeoMeWhy](https://www.youtube.com/watch?v=HGi3V2S2Y7s&list=PLvlkVRRKOYFTijx_2mJBv7u2F21VD-Zgb&index=1), minha base de dados foram arquivos que explicam de forma teórica sobre Aprendizado de maquina como por exemplo : "o que é overfitting?, data lekeage, Entropia" e etc..
+Este projeto foi desenvolvido de forma simples e didática com o objetivo de entender, na prática, como funciona a construção de um sistema de **RAG (Retrieval-Augmented Generation)**, também conhecido como **Geração Aumentada via Recuperação** todo ensinamento aprendido neste curso foi realizado no Canal [TeoMeWhy](https://www.youtube.com/watch?v=HGi3V2S2Y7s&list=PLvlkVRRKOYFTijx_2mJBv7u2F21VD-Zgb&index=1), minha base de dados foram arquivos que explicam de forma teórica sobre Aprendizado de maquina como por exemplo : "o que é overfitting?, data leakage, Entropia" e etc..
 
 A ideia principal não foi construir uma solução complexa ou pronta para produção, mas sim explorar os principais conceitos e etapas necessários para criar um sistema capaz de:
 
