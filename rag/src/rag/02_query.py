@@ -137,13 +137,3 @@ print(response.output_text)
 
 
 
-#%%
-import requests
-
-resp = requests.post("http://127.0.0.1:5003/predict",
-        json={"query":"o que é hiperparametro e parametro?"},
-        
-    )
-    
-print(resp.json().get("response"))
-# %%
