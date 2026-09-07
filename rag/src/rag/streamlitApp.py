@@ -29,23 +29,17 @@ if st.button("Processar Texto"):
   if query.strip() == "":
     st.warning("Por favor, digite algum texto antes de enviar.")
   else:
-    url = URI_API  # Substitua pela sua URL
+    url = URI_API 
 
-    # Define que estamos enviando e aceitando texto puro
     headers = {"Content-Type": "text/plain", "Accept": "text/plain"}
-
     try:
-      # 2. Envia o texto bruto usando o parâmetro 'data'
-      # .encode('utf-8') garante que acentos e caracteres especiais não quebrem
-      
+
       resp = requests.post(url,
       json={"query": query},)
       
       print( resp.json().get("response"))
         
       if resp.status_code == 200:
-        st.success("Texto processado com sucesso!")
-
         # 3. Captura e exibe o texto de retorno
         texto_saida = resp.json().get("response")
 
